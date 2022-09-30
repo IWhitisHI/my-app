@@ -1,0 +1,17 @@
+.app-header{
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.nav__link{
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: 0;
+    color: rgb(255, 255, 255);
+}

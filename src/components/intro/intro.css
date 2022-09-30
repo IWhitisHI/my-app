@@ -1,0 +1,5 @@
+.intro{
+    height: auto;
+    min-height: 820px;
+    background: url("./img/intro.jpg") center no-repeat;
+}
