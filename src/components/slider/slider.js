@@ -2,19 +2,23 @@ import './slider.css'
 
 const Slider = () => {
     return (
-        <div className='slider-item'>
-            <div className='position-absolute top-0 start-0 translate-middle'></div>
-            <span>01</span>
-            <soan>INTRO</soan>
-            <div className='position-absolute top-0 start-25 translate-middle'></div>
-            <span>01</span>
-            <soan>INTRO</soan>
-            <div className='position-absolute top-0 start-50 translate-middle'></div>
-            <span>01</span>
-            <soan>INTRO</soan>
-            <div className='position-absolute top-0 start-75 translate-middle'></div>
-            <span>01</span>
-            <soan>INTRO</soan>
+        <div className='slider-items'>
+            <div className="slider-item">
+              <div className="slider-item-progress"></div>
+              <span className="slider-item-number">01 </span><span className="slider-item-text">INTRO</span>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item-progress"></div>
+              <span className="slider-item-number">02 </span><span className="slider-item-text">WORK</span>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item-progress"></div>
+              <span className="slider-item-number">03 </span><span className="slider-item-text">ABOUT</span>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item-progress"></div>
+              <span className="slider-item-number">04 </span><span className="slider-item-text">CONTACTS</span>
+            </div>
         </div>
     );
 }

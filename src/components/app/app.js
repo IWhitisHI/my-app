@@ -1,11 +1,12 @@
 import Intro from "../intro/intro";
-// import AppQuotes from '../app-quotes/app-quotes';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
-// import './app.css'
+library.add(fas)
 
 function App(){
     return (
-        <div className='app'>
+        <div className='app-main'>
             <Intro/>
         </div>
     );

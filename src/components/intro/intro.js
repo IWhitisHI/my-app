@@ -1,21 +1,19 @@
 import AppHeader from '../app-header/app-header';
 import Slider from '../slider/slider';
 
-import './intro'
+import './intro.css'
 
 const Intro = () => {
     return (
         <div className='intro'>
             <AppHeader/>
-            <h2>Creative Template</h2>
-            <h1>WELCOME TO MOGO</h1>
-            <a href='www.google.com'>Learn More</a>
-            <p>fgdhghdhgdhdfghdfh</p>
-            <p>fgdhghdhgdhdfghdfh</p>
-            <p>fgdhghdhgdhdfghdfh</p>
-            <p>fgdhghdhgdhdfghdfh</p>
-            <p>fgdhghdhgdhdfghdfh</p>
-            <p>fgdhghdhgdhdfghdfh</p>
+            <div className='container'>
+                <div className='intro-inner'>
+                    <h2 className='intro-suptitle'>Creative Template</h2>
+                    <h1 className='intro-title'>WELCOME TO MOGO</h1>
+                    <a href='#dsafsda' className='intro-href'>Learn More</a>
+                </div>
+            </div>
             <Slider/>
         </div>
     );
