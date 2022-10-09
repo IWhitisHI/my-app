@@ -34,11 +34,14 @@
 .intro{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
     text-align: center;
-    height: auto;
-    max-height: 820px;
+    min-height: 820px;
+    background: url("../../img/intro.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
 }
 
 .container {

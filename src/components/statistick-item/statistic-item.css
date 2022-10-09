@@ -1,0 +1,32 @@
+.container-item{
+    background-color: #95e1d3;
+}
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+}
+
+.statistics-item {
+    flex: 1 1 0;
+    color: #fff;
+    padding: 70px 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.statistics-count {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.statistics-text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.statistics-item:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,13 +1,15 @@
 import Intro from "../intro/intro";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import AppSection from "../app-section/app-section";
+import StatistickItem from "../statistick-item/statistick-item";
 
-library.add(fas)
+import './app.css'
 
 function App(){
     return (
         <div className='app-main'>
             <Intro/>
+            <AppSection/>
+            <StatistickItem/>
         </div>
     );
 }

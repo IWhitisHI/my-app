@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './app-header.css'
 
 
@@ -13,10 +14,10 @@ const AppHeader = () => {
                 <a className='nav-link' href='#blog'>BLOG</a>
                 <a className='nav-link' href='#contact'>CONTACT</a>
                 <button type="button" href="#button" className='m'>
-                    <FontAwesomeIcon icon="fa-solid fa-cart-shopping"/>
+                    <FontAwesomeIcon icon={faShoppingCart}/>
                 </button>
                 <button type="button" href="#button" className='m'>
-                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+                    <FontAwesomeIcon icon={faSearch}/>
                 </button>
             </div>
         </div>
