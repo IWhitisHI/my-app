@@ -2,11 +2,6 @@
     margin: 0 10%;
 }
 
-.section-header{
-    margin: 0 10%;
-    text-align: center;
-}
-
 .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr );

@@ -1,0 +1,24 @@
+.section1{
+    background: url(../../img/devices-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.devices {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.devices-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.devices-img-iphone {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+}
