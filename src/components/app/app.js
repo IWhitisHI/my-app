@@ -1,6 +1,7 @@
 import Intro from "../intro/intro";
 import AppSection from "../app-section/app-section";
 import StatistickItem from "../statistick-item/statistick-item";
+import AppSection1 from "../app-section1/app-section1";
 
 import './app.css'
 
@@ -10,6 +11,7 @@ function App(){
             <Intro/>
             <AppSection/>
             <StatistickItem/>
+            <AppSection1/>
         </div>
     );
 }
