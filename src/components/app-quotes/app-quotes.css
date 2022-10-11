@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+.quotes-0{
+    padding: 5%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+
 .container-quotes{
     padding: 0 6%;
     display: flex;

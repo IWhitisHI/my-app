@@ -5,8 +5,9 @@ import imgAvatar from '../../img/avatar.png'
 import './app-quotes.css'
 
 const AppQuotes = () => {
+    
     return (
-        <div className="quotes">
+        <div className="quotes quotes-0">
             <div className="container-quotes">
                 <div /*id="slider-btn-prev"*/ className="slider-btn prev">
                     <i><FontAwesomeIcon icon={faAngleLeft} className='i-a-f'/></i>

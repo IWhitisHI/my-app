@@ -10,15 +10,15 @@ import './app-section-logs.css'
 const AppSectionLogs = () => {
     return (
 
-        <div class="section section-logos">
-            <div class="container">
-            <div class="logos">
-                <div class="logos-item"><img src={logoImg1} alt=""/></div>
-                <div class="logos-item"><img src={logoImg2} alt=""/></div>
-                <div class="logos-item"><img src={logoImg3} alt=""/></div>
-                <div class="logos-item"><img src={logoImg4} alt=""/></div>
-                <div class="logos-item"><img src={logoImg5} alt=""/></div>
-                <div class="logos-item"><img src={logoImg6} alt=""/></div>
+        <div className="section section-logos">
+            <div className="container">
+            <div className="logos">
+                <div className="logos-item"><img src={logoImg1} alt=""/></div>
+                <div className="logos-item"><img src={logoImg2} alt=""/></div>
+                <div className="logos-item"><img src={logoImg3} alt=""/></div>
+                <div className="logos-item"><img src={logoImg4} alt=""/></div>
+                <div className="logos-item"><img src={logoImg5} alt=""/></div>
+                <div className="logos-item"><img src={logoImg6} alt=""/></div>
             </div>
             </div>
         </div>
