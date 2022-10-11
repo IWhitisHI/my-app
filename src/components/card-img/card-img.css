@@ -1,5 +1,100 @@
-.card-i{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.section {
+    padding: 80px 0;
 }
+
+.i-u{
+    color:white;
+}
+  
+.section-header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+  
+.section-suptitle {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Kaushan Script', cursive;
+}
+  
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+  
+.section-title:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 30px auto;
+}
+  
+.section-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+}
+  
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 80px -15px 0;
+}
+  
+.card-inner {
+    background-color: #95e1d3;
+}
+  
+.card-inner:hover .card-text {
+    opacity: 1;
+}
+  
+.card-inner:hover .card-image {
+    transform: translate3D(-10px, -10px, 0);
+}
+  
+.card-inner:hover .card-image img{
+    opacity: .1;
+}
+  
+.card-item {
+    max-width: 410px;
+    padding: 0 15px;
+    position: relative;
+}
+  
+.card-image {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform 0.2s linear;
+}
+  
+.card-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .2s linear;
+    display: block;
+}
+  
+.card-text {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+  

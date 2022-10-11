@@ -1,0 +1,55 @@
+.team {
+    display: flex;
+}
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+  
+.social-item {
+    text-decoration: none;
+    color:  #f38181;
+}
+  
+.social-item {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fce38a;
+    transition: all .2s ease;
+}
+  
+.social-item {
+    border-right: 1px solid #f38181;
+}
+  
+.social-item:last-child {
+    border-right: 0;
+}
+  
+.social-item:hover {
+    background-color: #f38181;
+    color: #fff;
+}
+  
+.card-info {
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.card-info-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+}
+  
+.card-info-profession {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #999;
+}

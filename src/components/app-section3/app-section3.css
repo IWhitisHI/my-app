@@ -88,7 +88,7 @@ i {
     font-style: italic;
     color: #999;
     padding: 10px 15px;
-    max-height: calc(380px - (51px * 3) - 29px);
+    max-height: 145px;
     border-top: 1px solid #ccc;
   
     scrollbar-color: #ccc;

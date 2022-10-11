@@ -9,7 +9,7 @@ import './app-section3.css'
 
 const AppSection3 = () => {
     return (
-        <section className="section section-4">
+        <section className="section">
             <div className="container">
                 <div className="section-header">
                     <h3 className="section-suptitle">Service</h3>

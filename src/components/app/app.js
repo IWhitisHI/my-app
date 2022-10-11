@@ -5,6 +5,7 @@ import AppSection1 from "../app-section1/app-section1";
 import AppSection2 from "../app-section2/app-section2";
 import AppSection3 from "../app-section3/app-section3";
 import AppQuotes from "../app-quotes/app-quotes";
+import AppSection4 from "../app-section4/app-section4";
 
 import './app.css'
 
@@ -18,6 +19,7 @@ function App(){
             <AppSection2/>
             <AppSection3/>
             <AppQuotes/>
+            <AppSection4/>
         </div>
     );
 }
