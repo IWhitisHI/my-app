@@ -43,7 +43,6 @@
   
 .card {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 80px -15px 0;
 }

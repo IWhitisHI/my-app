@@ -1,3 +1,4 @@
+import AppHeader from "../app-header/app-header";
 import Intro from "../intro/intro";
 import AppSection from "../app-section/app-section";
 import StatistickItem from "../statistick-item/statistick-item";
@@ -19,6 +20,7 @@ import './app.css'
 function App(){
     return (
         <div className='app-main'>
+            <AppHeader/>
             <Intro/>
             <AppSection/>
             <StatistickItem/>

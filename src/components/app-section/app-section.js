@@ -4,7 +4,7 @@ import './app-section.css'
 
 const AppSection = () => {
     return (
-        <section className='section'>
+        <section id='about' className='section'>
                 <CardImg/>
         </section>
     );

@@ -19,7 +19,7 @@ import './app-footer.css'
 const AppFooter = () => {
     return (
 
-        <footer id="contacts" className="footer">
+        <footer id="contact" className="footer">
             <div className="container">
                 <div className="footer__inner">
                 <div className="footer__item item-1">
