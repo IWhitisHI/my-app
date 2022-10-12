@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './app-header.css'
@@ -5,9 +6,30 @@ import './app-header.css'
 
 
 const AppHeader = () => {
+    const [scroll, setScroll] = useState(0);
+
+    const handleScroll = () => {
+      setScroll(window.scrollY);
+    };
+  
+    let classHeader = 'header'
+  
+    useEffect(() => {
+        return () => window.addEventListener("scroll", handleScroll)
+    });
+
+    const setClassHeader = () => {
+        if (scroll > 759) {
+            return classHeader += ' fixed'
+        } else {
+            return classHeader
+        }
+    }
+  
+    
     return (
 
-        <header id="header" className="header">
+        <header id="header" className={setClassHeader()}>
             <div className="container">
                 <div className="header-inner">
                     <div className="header-logo">MoGo</div>
@@ -20,10 +42,6 @@ const AppHeader = () => {
                     <button type="button" className="nav-link btn-nav" href="#"><FontAwesomeIcon icon={faShoppingCart}/></button>
                     <button type="button" href="#" className="nav-link btn-nav"><FontAwesomeIcon icon={faSearch}/></button>
                     </nav>
-            
-                    <button id="burger-container" type="button" className="nav-toggle">
-                    <span className="nav-toggle-item">Menu</span>
-                    </button>
                 </div>
             </div>
         </header>

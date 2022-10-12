@@ -42,7 +42,7 @@ a {
 }
   
 .header-logo {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     line-height: 1;
@@ -172,4 +172,10 @@ button.nav-link {
   
 .nav-toggle-item:after {
     bottom: -8px;
+}
+
+.btntest{
+    position: fixed;
+    width: 100px;
+    height: 100px;
 }

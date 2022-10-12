@@ -17,6 +17,7 @@ import instagramImg9 from '../../img/instagram/9.jpg';
 import './app-footer.css'
 
 const AppFooter = () => {
+
     return (
 
         <footer id="contact" className="footer">

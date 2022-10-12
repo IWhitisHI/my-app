@@ -27,11 +27,11 @@ function App(){
             <AppSection1/>
             <AppSection2/>
             <AppSection3/>
-            <AppQuotes/>
+            <AppQuotes number ={0}/>
             <AppSection4/>
             <AppSectionLogs/>
             <AppSection5/>
-            <AppQuotes/>
+            <AppQuotes number ={1}/>
             <AppSection6/>
             <AppSection7/>
             <AppMap/>

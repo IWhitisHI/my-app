@@ -4,12 +4,12 @@ import imgAvatar from '../../img/avatar.png'
 
 import './app-quotes.css'
 
-const AppQuotes = () => {
+const AppQuotes = (props) => {
     
     return (
-        <div className="quotes quotes-0">
+        <div className={props.number === 0 ? 'quotes' : 'quotes-0' }>
             <div className="container-quotes">
-                <div /*id="slider-btn-prev"*/ className="slider-btn prev">
+                <div className="slider-btn prev">
                     <i><FontAwesomeIcon icon={faAngleLeft} className='i-a-f'/></i>
                 </div>
                 <div className="quotes-inner slider-container">
@@ -43,7 +43,7 @@ const AppQuotes = () => {
                         </div> */}
                     </div>
                 </div>
-                <div /*id="slider-btn-next"*/ className="slider-btn next">
+                <div className="slider-btn next">
                     <i><FontAwesomeIcon icon={faAngleRight} className='i-a-f'/></i>
                 </div>
             </div>
