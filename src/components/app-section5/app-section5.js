@@ -13,7 +13,7 @@ import './app-section5.css'
 const AppSection5 = () => {
     return (
 
-        <section className="section section-6">
+        <section className="section">
             <div className="container">
         
             <div className="section-header">

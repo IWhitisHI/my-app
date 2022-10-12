@@ -1,0 +1,45 @@
+.section-6 {
+    background: url("../../img/clients-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+  
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+  
+.clients-item {
+    display: flex;
+    width: 42%;
+    gap: 7%;
+    padding: 3%;
+}
+  
+.clients-item-left img{
+    border-radius: 50%;
+}
+  
+.clients-item-right--title {
+    text-transform: uppercase;
+}
+  
+.clients-item-right--profession {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #999;
+}
+  
+.clients-item hr {
+    width: 60px;
+    height: 3px;
+    border: none;
+    background-color: red;
+    margin: 15px 0;
+}
+  
+.clients-item-right--text {
+    font-size: 14px;
+    color: #999;
+}

@@ -8,6 +8,11 @@ import AppQuotes from "../app-quotes/app-quotes";
 import AppSection4 from "../app-section4/app-section4";
 import AppSectionLogs from "../app-section-logs/app-section-logs";
 import AppSection5 from "../app-section5/app-section5";
+import AppSection6 from "../app-section6/app-section6";
+import AppSection7 from "../app-section7/app-section7";
+import AppMap from "../app-map/app-section4";
+import AppFooter from "../app-footer/app-footer";
+import Copyright from "../copyright/copyright";
 
 import './app.css'
 
@@ -25,6 +30,11 @@ function App(){
             <AppSectionLogs/>
             <AppSection5/>
             <AppQuotes/>
+            <AppSection6/>
+            <AppSection7/>
+            <AppMap/>
+            <AppFooter/>
+            <Copyright/>
         </div>
     );
 }
