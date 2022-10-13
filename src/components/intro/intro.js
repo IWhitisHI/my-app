@@ -35,7 +35,7 @@ const Intro = () => {
                     {
                         sliderElement.map((element, index) =>
                             <div className="slider-item" key={index}>
-                            <div className="slider-item-progress active"></div>
+                            <div className="slider-item-progress" /*active*/></div>
                             <span className="slider-item-number">{element.number}</span><span className="slider-item-text">{element.name}</span>
                             </div>
                         )
