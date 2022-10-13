@@ -174,8 +174,20 @@ button.nav-link {
     bottom: -8px;
 }
 
-.btntest{
-    position: fixed;
-    width: 100px;
-    height: 100px;
+/* .header-slider{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.slider-text{
+    display: none;
+}
+
+.header-slider:hover ~ .slider-text{
+    display: block;
+}
+
+.header-item{
+    min-height: 10px;
+} */

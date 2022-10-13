@@ -7,6 +7,22 @@ import './app-header.css'
 
 const AppHeader = () => {
     const [scroll, setScroll] = useState(0);
+    // const sliderElement = [{
+    //     number: '01',
+    //     name: 'intro'
+    // },
+    // {
+    //     number: '02',
+    //     name: 'work'
+    // },
+    // {
+    //     number: '03',
+    //     name: 'about'
+    // },
+    // {
+    //     number: '04',
+    //     name: 'contacts'
+    // }]
 
     const handleScroll = () => {
       setScroll(window.scrollY);
@@ -30,6 +46,18 @@ const AppHeader = () => {
     return (
 
         <header id="header" className={setClassHeader()}>
+            {/* <div className="header-slider">
+                {
+                    sliderElement.map((element, index) =>
+                        <div className="slider-item" key={index}>
+                                <div className="slider-item-progress header-item"></div>
+                            <div className="slider-text">
+                                <span className="slider-item-number">{element.number}</span><span className="slider-item-text">{element.name}</span>
+                            </div>
+                        </div>
+                    )
+                }
+            </div> */}
             <div className="container">
                 <div className="header-inner">
                     <div className="header-logo">MoGo</div>
