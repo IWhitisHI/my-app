@@ -7,6 +7,25 @@ import { faEye, faCommenting } from '@fortawesome/free-solid-svg-icons'
 import './app-section7.css'
 
 const AppSection7 = () => {
+    const blogElement = [{
+                            img: blogImg1,
+                            date: 15,
+                            views: 542,
+                            comments: 17
+                        },
+                        {
+                            img: blogImg2,
+                            date: 13,
+                            views: 992,
+                            comments: 42
+                        },
+                        {
+                            img: blogImg3,
+                            date: 13,
+                            views: 1560,
+                            comments: 98
+                        }]
+
     return (
 
         <section id='blog' className="section section-8">
@@ -17,51 +36,24 @@ const AppSection7 = () => {
             </div>
         
             <div className="blog">
-        
-                <div className="blog-item">
-                <div className="post-header">
-                    <a href="#a"><img className="post-image" src={blogImg1} alt=""/></a>
-                    <div className="post-date"><span>15</span><span>Jan</span></div>
-                </div>
-                <div className="post-content">
-                    <div className="post-title"><a href="#a">Lorem ipsum, dolor sit</a></div>
-                    <div className="post-text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis officia, ullam libero.</div>
-                </div>
-                <div className="post-footer">
-                    <span><FontAwesomeIcon className='icon-e' icon={faEye}/>542</span>
-                    <span><FontAwesomeIcon className='icon-e' icon={faCommenting}/>17</span>
-                </div>
-                </div>
-        
-                <div className="blog-item">
-                <div className="post-header">
-                    <a href="#a"><img className="post-image" src={blogImg2} alt=""/></a>
-                    <div className="post-date"><span>14</span><span>Jan</span></div>
-                </div>
-                <div className="post-content">
-                    <div className="post-title"><a href="#a">Lorem ipsum dolor sit</a></div>
-                    <div className="post-text">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur at recusandae minima.</div>
-                </div>
-                <div className="post-footer">
-                    <span><FontAwesomeIcon className='icon-e' icon={faEye}/>992</span>
-                    <span><FontAwesomeIcon className='icon-e' icon={faCommenting}/>42</span>
-                </div>
-                </div>
-        
-                <div className="blog-item">
-                <div className="post-header">
-                    <a href="#a"><img className="post-image" src={blogImg3} alt=""/></a>
-                    <div className="post-date"><span>13</span><span>Jan</span></div>
-                </div>
-                <div className="post-content">
-                    <div className="post-title"><a href="#a">Lorem ipsum dolor sit</a></div>
-                    <div className="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae blanditiis nisi?</div>
-                </div>
-                <div className="post-footer">
-                    <span><FontAwesomeIcon className='icon-e' icon={faEye}/>1560</span>
-                    <span><FontAwesomeIcon className='icon-e' icon={faCommenting}/>98</span>
-                </div>
-                </div>
+                {
+                    blogElement.map((element, index) =>
+                        <div className="blog-item" key={index}>
+                        <div className="post-header">
+                            <a href="#a"><img className="post-image" src={element.img} alt=""/></a>
+                            <div className="post-date"><span>{element.date}</span><span>Jan</span></div>
+                        </div>
+                        <div className="post-content">
+                            <div className="post-title"><a href="#a">Lorem ipsum, dolor sit</a></div>
+                            <div className="post-text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis officia, ullam libero.</div>
+                        </div>
+                        <div className="post-footer">
+                            <span><FontAwesomeIcon className='icon-e' icon={faEye}/>{element.views}</span>
+                            <span><FontAwesomeIcon className='icon-e' icon={faCommenting}/>{element.comments}</span>
+                        </div>
+                        </div>
+                    )
+                }
         
             </div>
         

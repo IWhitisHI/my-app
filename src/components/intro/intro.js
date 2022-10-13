@@ -2,6 +2,23 @@
 import './intro.css'
 
 const Intro = () => {
+    const sliderElement = [{
+                                number: '01',
+                                name: 'intro'
+                            },
+                            {
+                                number: '02',
+                                name: 'work'
+                            },
+                            {
+                                number: '03',
+                                name: 'about'
+                            },
+                            {
+                                number: '04',
+                                name: 'contacts'
+                            }]
+
     return (
 
         <div id="intro" className="intro">
@@ -15,7 +32,15 @@ const Intro = () => {
             <div className="slider">
                 <div className="container">
                 <div className="slider-inner">
-                    <div className="slider-item">
+                    {
+                        sliderElement.map((element, index) =>
+                            <div className="slider-item" key={index}>
+                            <div className="slider-item-progress active"></div>
+                            <span className="slider-item-number">{element.number}</span><span className="slider-item-text">{element.name}</span>
+                            </div>
+                        )
+                    }
+                    {/* <div className="slider-item">
                     <div className="slider-item-progress active"></div>
                     <span className="slider-item-number">01</span><span className="slider-item-text">intro</span>
                     </div>
@@ -30,7 +55,7 @@ const Intro = () => {
                     <div className="slider-item">
                     <div className="slider-item-progress"></div>
                     <span className="slider-item-number">04</span><span className="slider-item-text">contacts</span>
-                    </div>
+                    </div> */}
                 </div>
                 </div>
             </div>

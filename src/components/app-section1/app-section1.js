@@ -8,6 +8,13 @@ import  servImgW  from '../../img/services-img/webdesign.png';
 import './app-section1.css'
 
 const AppSection1 = () => {
+    const servicesElement = [{img:servImgP, suptitle:'photography'},
+                             {img:servImgW, suptitle:'web design'},
+                             {img:servImgC, suptitle:'creativity'},
+                             {img:servImgS, suptitle:'seo'},
+                             {img:servImgCs, suptitle:'css/html'},
+                             {img:servImgD, suptitle:'digital'}]
+
     return (
         <section id='services' className='section'>
             <div className='container-s-1'>
@@ -18,36 +25,13 @@ const AppSection1 = () => {
                     </div>
 
                     <div className="services">
-                        <div className="services-item">
-                            <img src={servImgP} alt="" className="services-icon"/>
-                            <div className="services-title">photography</div>
-                            <div className="services-text">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, dolorum. Odit, possimus.</div>
-                        </div>
-                        <div className="services-item">
-                            <img src={servImgW} alt="" className="services-icon"/>
-                            <div className="services-title">web design</div>
-                            <div className="services-text">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, dolorum. Odit, possimus.</div>
-                        </div>
-                        <div className="services-item">
-                            <img src={servImgC} alt="" className="services-icon"/>
-                            <div className="services-title">creativity</div>
-                            <div className="services-text">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, dolorum. Odit, possimus.</div>
-                        </div>
-                        <div className="services-item">
-                            <img src={servImgS} alt="" className="services-icon"/>
-                            <div className="services-title">seo</div>
-                            <div className="services-text">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, dolorum. Odit, possimus.</div>
-                        </div>
-                        <div className="services-item">
-                            <img src={servImgCs} alt="" className="services-icon"/>
-                            <div className="services-title">css/html</div>
-                        <div className="services-text">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, dolorum. Odit, possimus.</div>
-                        </div>
-                        <div className="services-item">
-                            <img src={servImgD} alt="" className="services-icon"/>
-                            <div className="services-title">digital</div>
-                        <div className="services-text">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, dolorum. Odit, possimus.</div>
-                        </div>
+                        {servicesElement.map((element, index) =>
+                            <div className="services-item" key={index}>
+                                <img src={element.img} alt="" className="services-icon"/>
+                                <div className="services-title">{element.suptitle}</div>
+                                <div className="services-text">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, dolorum. Odit, possimus.</div>
+                            </div>
+                        )}
                         <div className="services-line-middle"></div>
                     </div>
 

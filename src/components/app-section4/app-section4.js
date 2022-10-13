@@ -7,6 +7,22 @@ import { faFacebookF, faTwitter, faInstagram, faGithub } from '@fortawesome/free
 import './app-section4.css'
 
 const AppSection4 = () => {
+    const cardElement = [{
+                          img:teamImg1,
+                          name:'Matthew Dix',
+                          profession:'Graphic Design'
+                         },
+                         {
+                          img:teamImg2,
+                          name:'Christopher Campbell',
+                          profession:'Branding/UX design'
+                         }, 
+                         {
+                          img:teamImg3,
+                          name:'Michael Fertig',
+                          profession:'Developer'
+                        }] 
+
     return (
 
         <section className="section">
@@ -23,81 +39,34 @@ const AppSection4 = () => {
                 </div>
         
                 <div className="card">
-                <div className="card-item">
-                    <div className="card-inner">
-                    <div className="card-image">
-                        <img src={teamImg1} alt=""/>
-                        <div className="social-icons card-text">
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faFacebookF}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faTwitter}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faInstagram}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faGithub}/>
-                        </a>
+                {cardElement.map((element, index) =>
+                    <div className="card-item" key={index}>
+                        <div className="card-inner">
+                        <div className="card-image">
+                            <img src={element.img} alt=""/>
+                            <div className="social-icons card-text">
+                            <a className="social-item" href="#A">
+                                <FontAwesomeIcon icon={faFacebookF}/>
+                            </a>
+                            <a className="social-item" href="#A">
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </a>
+                            <a className="social-item" href="#A">
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </a>
+                            <a className="social-item" href="#A">
+                                <FontAwesomeIcon icon={faGithub}/>
+                            </a>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="card-info">
+                        <div className="card-info-name">{element.name}</div>
+                        <div className="card-info-profession">{element.profession}</div>
                         </div>
                     </div>
-                    </div>
-                    <div className="card-info">
-                    <div className="card-info-name">Matthew Dix</div>
-                    <div className="card-info-profession">Graphic Design</div>
-                    </div>
-                </div>
-                <div className="card-item">
-                    <div className="card-inner">
-                    <div className="card-image">
-                        <img src={teamImg2} alt=""/>
-                        <div className="social-icons card-text">
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faFacebookF}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faTwitter}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faInstagram}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faGithub}/>
-                        </a>
-                        </div>
-                    </div>
-                    </div>
-                    <div className="card-info">
-                    <div className="card-info-name">Christopher Campbell</div>
-                    <div className="card-info-profession">Branding/UX design</div>
-                    </div>
-                </div>
-                <div className="card-item">
-                    <div className="card-inner">
-                    <div className="card-image">
-                        <img src={teamImg3} alt=""/>
-                        <div className="social-icons card-text">
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faFacebookF}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faTwitter}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faInstagram}/>
-                        </a>
-                        <a className="social-item" href="#A">
-                            <FontAwesomeIcon icon={faGithub}/>
-                        </a>
-                        </div>
-                    </div>
-                    </div>
-                    <div className="card-info">
-                    <div className="card-info-name">Michael Fertig</div>
-                    <div className="card-info-profession">Developer</div>
-                    </div>
-                </div>
+                )}
+
                 </div>
             </div>
         </section>

@@ -17,6 +17,19 @@ import instagramImg9 from '../../img/instagram/9.jpg';
 import './app-footer.css'
 
 const AppFooter = () => {
+    const blogElement = [{
+                            img: blogImg1,
+                            text: 'Lorem ipsum dolor, sit, amet consectetur adipisicing...'
+                        },
+                        {
+                            img: blogImg2,
+                            text: 'Lorem ipsum dolor...'
+                        },
+                        {
+                            img: blogImg3,
+                            text: 'Lorem ipsum dolor, sit amet...'
+                        }],
+          instagramElement = [instagramImg1, instagramImg2, instagramImg3, instagramImg4, instagramImg5, instagramImg6, instagramImg7, instagramImg8, instagramImg9]
 
     return (
 
@@ -60,61 +73,31 @@ const AppFooter = () => {
                 </div>
                 <div className="footer__item item-2">
                     <div className="footer__item-title">blogs</div>
-                    <div className="footer__blog">
-                    <div className="footer__blog-item">
-                        <a href="#a" className="footer__blog-link"><img className="footer__blog-image" src={blogImg1} alt=""/></a>
-                        <div className="footer__blog-text">
-                        <a className="footer__blog-textlink" href="#a"><p>Lorem ipsum dolor, sit, amet consectetur adipisicing...</p></a>
-                        <span>Jan 9, 2016</span>
-                        </div>
-                    </div>
-                    <div className="footer__blog-item">
-                        <a href="#a" className="footer__blog-link"><img className="footer__blog-image" src={blogImg2} alt=""/></a>
-                        <div className="footer__blog-text">
-                        <a className="footer__blog-textlink" href="#a"><p>Lorem ipsum dolor...</p></a>
-                        <span>Jan 9, 2016</span>
-                        </div>
-                    </div>
-                    <div className="footer__blog-item">
-                        <a href="#a" className="footer__blog-link"><img className="footer__blog-image" src={blogImg3} alt=""/></a>
-                        <div className="footer__blog-text">
-                        <a className="footer__blog-textlink" href="#a"><p>Lorem ipsum dolor, sit amet...</p></a>
-                        <span>Jan 9, 2016</span>
-                        </div>
-                    </div>
+                        <div className="footer__blog">
+                            {
+                                blogElement.map((element, index) =>
+                                    <div className="footer__blog-item" key={index}>
+                                        <a href="#a" className="footer__blog-link"><img className="footer__blog-image" src={element.img} alt=""/></a>
+                                        <div className="footer__blog-text">
+                                        <a className="footer__blog-textlink" href="#a"><p>{element.text}</p></a>
+                                        <span>Jan 9, 2016</span>
+                                        </div>
+                                    </div>
+                                )
+                            }
                     </div>
                 </div>
                 <div className="footer__item item-3">
                     <div className="footer__item-title">instagram</div>
-                    <div className="footer__instagram">
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg1} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg2} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg3} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg4} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg5} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg6} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg7} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg8} alt="" className="instagram__item-image"/>
-                    </a>
-                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer">
-                        <img src={instagramImg9} alt="" className="instagram__item-image"/>
-                    </a>
-                    </div>
+                        <div className="footer__instagram">
+                            {
+                                instagramElement.map((element, index) => 
+                                    <a href="#a" className="instagram__item" target="_blank" rel="noopener noreferrer" key={index}>
+                                        <img src={element} alt="" className="instagram__item-image"/>
+                                    </a>
+                                )
+                            }
+                        </div>
                     <div><a className="instagram-link" href="#a">View more photos</a></div>
                 </div>
                 </div>

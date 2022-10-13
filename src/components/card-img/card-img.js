@@ -7,6 +7,8 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import "./card-img.css"
 
 const CardImg = () => {
+    const cardElement = [about1Img, about2Img, about3Img]
+
     return (
             <div className="container">
         
@@ -21,39 +23,19 @@ const CardImg = () => {
                 </div>
         
                 <div className="card">
-                <div className="card-item">
-                    <div className="card-inner">
-                    <div className="card-image">
-                        <img src={about1Img} alt=""/>
-                            <div className="card-text">
-                            <FontAwesomeIcon icon={faUser} className='i-u'/><br/>
-                            super team
+                    { cardElement.map((element, index) => 
+                        <div className="card-item" key={index}>
+                            <div className="card-inner">
+                            <div className="card-image">
+                                <img src={element} alt=""/>
+                                    <div className="card-text">
+                                    <FontAwesomeIcon icon={faUser} className='i-u'/><br/>
+                                    super team
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                </div>
-                <div className="card-item">
-                    <div className="card-inner">
-                    <div className="card-image">
-                        <img src={about2Img} alt=""/>
-                            <div className="card-text">
-                            <FontAwesomeIcon icon={faUser} className='i-u'/><br/>
-                            super team
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div className="card-item">
-                    <div className="card-inner">
-                    <div className="card-image">
-                        <img src={about3Img} alt=""/>
-                        <div className="card-text">
-                            <FontAwesomeIcon icon={faUser} className='i-u'/><br/>
-                            super team
-                        </div>
-                    </div>
-                    </div>
-                </div>
+                    )}               
                 </div>
         
             </div>

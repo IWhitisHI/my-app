@@ -8,17 +8,15 @@ import logoImg6 from '../../img/logos/6.png';
 import './app-section-logs.css'
 
 const AppSectionLogs = () => {
+    const logoElement = [logoImg1, logoImg2, logoImg3, logoImg4, logoImg5, logoImg6]
     return (
 
         <div className="section section-logos">
             <div className="container">
             <div className="logos">
-                <div className="logos-item"><img src={logoImg1} alt=""/></div>
-                <div className="logos-item"><img src={logoImg2} alt=""/></div>
-                <div className="logos-item"><img src={logoImg3} alt=""/></div>
-                <div className="logos-item"><img src={logoImg4} alt=""/></div>
-                <div className="logos-item"><img src={logoImg5} alt=""/></div>
-                <div className="logos-item"><img src={logoImg6} alt=""/></div>
+                {
+                    logoElement.map((element, index) => <div className="logos-item" key={index}><img src={element} alt=""/></div>)
+                }
             </div>
             </div>
         </div>

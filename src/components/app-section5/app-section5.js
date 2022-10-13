@@ -11,6 +11,8 @@ import { faImage } from '@fortawesome/free-regular-svg-icons'
 import './app-section5.css'
 
 const AppSection5 = () => {
+    const worksElement = [workImg1, workImg2, workImg3, workImg4, workImg5, workImg6, workImg7]
+
     return (
 
         <section id='works' className="section">
@@ -28,62 +30,18 @@ const AppSection5 = () => {
         
             </div>
             <div className="works">
-            <div className="works-item">
-                <img src={workImg1} alt="" className="works-item-image"/>
-                <div className="works-info">
-                <FontAwesomeIcon icon={faImage}/>
-                <span className="works-info-title">creatively desing</span>
-                <p className="works-info-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div className="works-item">
-                <img src={workImg2} alt="" className="works-item-image"/>
-                <div className="works-info">
-                <FontAwesomeIcon icon={faImage}/>
-                <span className="works-info-title">creatively desing</span>
-                <p className="works-info-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div className="works-item">
-                <img src={workImg3} alt="" className="works-item-image"/>
-                <div className="works-info">
-                <FontAwesomeIcon icon={faImage}/>
-                <span className="works-info-title">creatively desing</span>
-                <p className="works-info-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div className="works-item">
-                <img src={workImg4} alt="" className="works-item-image"/>
-                <div className="works-info">
-                <FontAwesomeIcon icon={faImage}/>
-                <span className="works-info-title">creatively desing</span>
-                <p className="works-info-text">Lorem ipsum, dolor, sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div className="works-item">
-                <img src={workImg5} alt="" className="works-item-image"/>
-                <div className="works-info">
-                <FontAwesomeIcon icon={faImage}/>
-                <span className="works-info-title">creatively desing</span>
-                <p className="works-info-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div className="works-item">
-                <img src={workImg6} alt="" className="works-item-image"/>
-                <div className="works-info">
-                <FontAwesomeIcon icon={faImage}/>
-                <span className="works-info-title">creatively desing</span>
-                <p className="works-info-text">Lorem, ipsum, dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div className="works-item">
-                <img src={workImg7} alt="" className="works-item-image"/>
-                <div className="works-info">
-                <FontAwesomeIcon icon={faImage}/>
-                <span className="works-info-title">creatively desing</span>
-                <p className="works-info-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
+                {
+                    worksElement.map((element, index) =>
+                        <div className="works-item" key={index}>
+                        <img src={element} alt="" className="works-item-image"/>
+                        <div className="works-info">
+                        <FontAwesomeIcon icon={faImage}/>
+                        <span className="works-info-title">creatively desing</span>
+                        <p className="works-info-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        </div>
+                    )
+                }
             </div>
         </section>
 
