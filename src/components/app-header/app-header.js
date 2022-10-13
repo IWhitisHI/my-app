@@ -7,6 +7,26 @@ import './app-header.css'
 
 const AppHeader = () => {
     const [scroll, setScroll] = useState(0);
+
+    const handleScroll = () => {
+      setScroll(window.scrollY);
+    };
+  
+    let classHeader = 'header'
+  
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll)
+        return () => window.addEventListener("scroll", handleScroll)
+    });
+
+    const setClassHeader = () => {
+        if (scroll > 759) {
+            return classHeader += ' fixed'
+        } else {
+            return classHeader
+        }
+    }
+
     // const sliderElement = [{
     //     number: '01',
     //     name: 'intro'
@@ -23,24 +43,6 @@ const AppHeader = () => {
     //     number: '04',
     //     name: 'contacts'
     // }]
-
-    const handleScroll = () => {
-      setScroll(window.scrollY);
-    };
-  
-    let classHeader = 'header'
-  
-    useEffect(() => {
-        return () => window.addEventListener("scroll", handleScroll)
-    });
-
-    const setClassHeader = () => {
-        if (scroll > 759) {
-            return classHeader += ' fixed'
-        } else {
-            return classHeader
-        }
-    }
   
     
     return (
